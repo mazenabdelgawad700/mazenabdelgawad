@@ -1,20 +1,14 @@
-import "./App.css";
+import DarkModeButton from "./Components/DarkModeButton/DarkModeButton.jsx";
 import Home from "./Pages/Home/Home.jsx";
-
-// const setDark = () => {
-//   localStorage.setItem("theme", "dark");
-//   document.documentElement.setAttribute("data-theme", "dark");
-// };
-
-// const setLight = () => {
-//   localStorage.setItem("theme", "light");
-//   document.documentElement.setAttribute("data-theme", "light");
-// };
+import "./App.css";
 
 function App() {
   return (
     <main>
-      <Home />
+      <DarkModeButton />
+      <div className="container">
+        <Home />
+      </div>
     </main>
   );
 }

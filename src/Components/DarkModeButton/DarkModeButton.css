@@ -1,0 +1,13 @@
+.toggle-theme-wrapper {
+  text-align: right;
+  gap: 4px;
+  margin-bottom: 1rem;
+}
+
+.toggle-theme-wrapper span {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--font-secondary-color);
+  margin: 10px;
+}

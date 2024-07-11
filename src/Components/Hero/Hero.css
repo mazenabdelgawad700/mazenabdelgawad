@@ -1,0 +1,65 @@
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.overlapping-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  color: var(--font-main-color);
+}
+
+@media (max-width: 768px) {
+  .overlapping-text {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+    color: var(--font-main-color);
+  }
+}
+
+.colored-text {
+  color: var(--font-secondary-color);
+}
+
+.hero-image {
+  height: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  object-fit: fill;
+  border-bottom-left-radius: 90px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: var(--font-secondary-color);
+}
+
+.description {
+  max-width: 400px;
+  margin-bottom: 20px;
+  color: var(--font-main-color);
+}
+
+.cta-button {
+  padding: 10px 20px;
+  border: 2px solid var(--font-secondary-color);
+  color: var(--font-secondary-color);
+  border-radius: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background-color: var(--font-secondary-color);
+  color: #eee;
+}
