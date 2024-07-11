@@ -49,17 +49,17 @@
   color: var(--font-main-color);
 }
 
-.cta-button {
+.download {
   padding: 10px 20px;
   border: 2px solid var(--font-secondary-color);
   color: var(--font-secondary-color);
   border-radius: 60px;
   background-color: transparent;
-  cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
-.cta-button:hover {
+.download:hover {
   background-color: var(--font-secondary-color);
   color: #eee;
 }

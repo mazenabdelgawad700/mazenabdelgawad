@@ -1,4 +1,5 @@
 import mazen from "../../assets/p4.jpg";
+import pdf from "../../assets/CV.pdf";
 import "./Hero.css";
 const Hero = () => {
   return (
@@ -15,7 +16,9 @@ const Hero = () => {
           progress, and I am dedicated to bringing a fresh perspective to every
           project I undertake.
         </p>
-        <button className="cta-button">Get My CV</button>
+        <a className="download" href={pdf} download="Mazen_Abdelgowad_CV.pdf">
+          Get My CV
+        </a>
       </div>
       <div>
         <img className="hero-image" src={mazen} alt="mazen" />
