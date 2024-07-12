@@ -1,9 +1,10 @@
-.hero-section {
+.hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
+  padding-top: 100px;
 }
 
 .overlapping-text {
@@ -26,7 +27,7 @@
   }
 }
 
-.colored-text {
+.main-colored-text {
   color: var(--font-secondary-color);
 }
 
@@ -36,6 +37,7 @@
   margin-left: auto;
   object-fit: fill;
   border-bottom-left-radius: 90px;
+  filter: var(--image-filter);
 }
 
 .subtitle {
@@ -45,7 +47,6 @@
 
 .description {
   max-width: 400px;
-  margin-bottom: 20px;
   color: var(--font-main-color);
 }
 
@@ -55,10 +56,11 @@
   color: var(--font-secondary-color);
   border-radius: 60px;
   background-color: transparent;
-  text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
+  max-width: fit-content;
 }
+
 .download:hover {
   background-color: var(--font-secondary-color);
   color: #eee;

@@ -1,15 +1,16 @@
-import mazen from "../../assets/p4.jpg";
+import mainImage from "../../assets/p4.jpg";
 import pdf from "../../assets/CV.pdf";
 import "./Hero.css";
+import { FaDownload } from "react-icons/fa";
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section className="hero" id="hero">
       <div className="text-container">
-        <p className="subtitle">Software Engineer</p>
+        <p className="subtitle mb-0">Software Engineer</p>
         <h1 className="overlapping-text">
           HELLO I&apos;M
           <br />
-          <span className="colored-text">Mazen Abdelgowad</span>
+          <span className="main-colored-text">Mazen Abdelgowad</span>
         </h1>
         <p className="description">
           I believe that collaboration and creativity are the cornerstones of
@@ -17,11 +18,13 @@ const Hero = () => {
           project I undertake.
         </p>
         <a className="download" href={pdf} download="Mazen_Abdelgowad_CV.pdf">
-          Get My CV
+          CV
+          <FaDownload />
         </a>
       </div>
-      <div>
-        <img className="hero-image" src={mazen} alt="mazen" />
+
+      <div className="hero-image-container">
+        <img className="hero-image" src={mainImage} alt="mazen" />
       </div>
     </section>
   );

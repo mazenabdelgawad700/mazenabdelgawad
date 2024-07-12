@@ -1,0 +1,39 @@
+.navbar {
+  background-color: var(--nav-bar-background-color);
+  z-index: 5;
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.navbar-brand {
+  transition: 0.1s;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: var(--font-main-color);
+}
+
+.nav-link {
+  color: var(--font-main-color);
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--font-secondary-color) !important;
+}
+
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+  color: var(--font-secondary-color);
+}
+
+.toggler-icon {
+  color: var(--font-main-color);
+  font-size: 1.6rem;
+}
