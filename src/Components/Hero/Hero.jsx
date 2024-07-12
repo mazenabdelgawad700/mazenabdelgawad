@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="text-container">
         <p className="subtitle mb-0">Software Engineer</p>
         <h1 className="overlapping-text">
-          HELLO I&apos;M
+          HELLO I<span className="colored-text">&apos;</span>M
           <br />
           <span className="main-colored-text">Mazen Abdelgowad</span>
         </h1>
