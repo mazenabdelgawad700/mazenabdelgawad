@@ -1,0 +1,6 @@
+.about-image img {
+  max-width: 100%;
+  filter: var(--image-filter);
+  max-height: 500px;
+  border-radius: 10px;
+}

@@ -42,6 +42,22 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.main-header-title {
+  color: var(--font-main-color);
+  font-weight: bold;
+}
+
 .colored-text {
   color: var(--font-secondary-color);
+  font-weight: bold;
+}
+
+.colored-description {
+  color: var(--font-main-color);
+  word-wrap: break-word;
 }

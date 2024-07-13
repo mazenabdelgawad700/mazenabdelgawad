@@ -15,7 +15,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      // Determine which section is currently in view
       const sections = document.querySelectorAll("section");
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 50; // Adjusted for navbar height if needed
@@ -33,10 +32,8 @@ const Navbar = () => {
 
     handleScroll();
 
-    // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

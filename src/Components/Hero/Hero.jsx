@@ -1,7 +1,7 @@
-import mainImage from "../../assets/p4.jpg";
+import mainImage from "../../assets/p1.jpg";
 import pdf from "../../assets/CV.pdf";
-import "./Hero.css";
 import { FaDownload } from "react-icons/fa";
+import "./Hero.css";
 const Hero = () => {
   return (
     <section className="hero" id="hero">

@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-// import DarkModeButton from "./Components/DarkModeButton/DarkModeButton.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
