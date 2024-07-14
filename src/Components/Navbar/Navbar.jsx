@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import "./Navbar.css";
@@ -42,9 +41,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg position-fixed w-100">
       <div className="container">
-        <Link className="navbar-brand colored-text" to="/">
+        <a className="navbar-brand colored-text" href="#hero">
           Mazen Abdelgowad
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
