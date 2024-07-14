@@ -1,26 +1,19 @@
 import "./Portfolio.css";
-import BlogApp from "../../assets/p4.jpg";
-import project2 from "../../assets/p4.jpg";
-import project3 from "../../assets/p4.jpg";
+import project1 from "../../assets/project1.jpg";
+import project2 from "../../assets/project2.jpg";
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
       prjectName: "Blog App",
-      image: BlogApp,
-      link: "https://github.com/mazenabdelgowad/AI-portfolio",
+      image: project2,
+      link: "https://github.com/mazenabdelgowad/Blog-App",
     },
     {
       id: 2,
-      prjectName: "Project2",
-      image: project2,
-      link: "https://github.com/mazenabdelgowad/AI-portfolio",
-    },
-    {
-      id: 3,
-      prjectName: "Project3",
-      image: project3,
-      link: "https://github.com/mazenabdelgowad/AI-portfolio",
+      prjectName: "AI Agency",
+      image: project1,
+      link: "https://github.com/mazenabdelgowad/AI-portfolio/tree/master",
     },
   ];
 
@@ -53,12 +46,12 @@ const Portfolio = () => {
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
-            <button
+            {/* <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button>
+            ></button> */}
           </div>
 
           <div className="carousel-inner">
