@@ -1,0 +1,13 @@
+.carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  width: 100%;
+}
+
+.portfolio-link {
+  color: var(--font-secondary-color);
+}
