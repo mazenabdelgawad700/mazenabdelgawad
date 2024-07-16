@@ -13,9 +13,9 @@ const About = () => {
             <br />
             driven by innovation and a passion for creative expression. My
             Journey into the digital realm began in the heart of the bustling
-            streets of New York City. Growing up surrounded by the dynamic
-            energy of the city, I developed a keen interest in harnessing
-            technology to improve our digital lives.
+            streets of Cairo City. Growing up surrounded by the dynamic energy
+            of the city, I developed a keen interest in harnessing technology to
+            improve our digital lives.
           </p>
 
           <p className="colored-description">
@@ -27,11 +27,11 @@ const About = () => {
           </p>
 
           <p className="colored-description">
-            My academic pursuit led me to New York University (NYIJ), where I
-            delved into the world of arts and letters. It was here that my
-            creative instincts flourished, and I discovered the power of merging
-            artistic concepts with the limitless possibilities of the digital
-            landscape.
+            My academic pursuit led me to Bani Suief National University (BSNU),
+            where I delved into the world of arts and letters. It was here that
+            my creative instincts flourished, and I discovered the power of
+            merging artistic concepts with the limitless possibilities of the
+            digital landscape.
           </p>
         </div>
 
