@@ -11,14 +11,14 @@ const Footer = () => {
           <a
             target="_blank"
             className="mx-1 text-light"
-            href="https://www.linkedin.com/in/mazen-abdel-algowad-609b99254"
+            href="www.linkedin.com/in/mazen-abdelgawad"
           >
             <FaLinkedin />
           </a>
           <a
             target="_blank"
             className="mx-1 text-light"
-            href="https://github.com/mazenabdelgowad"
+            href="https://github.com/mazenabdelgawad700"
           >
             <FaGithub />
           </a>
