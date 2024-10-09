@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="" style={styles}>
       <div className="container d-flex justify-content-between align-items-center">
         <p className="mb-0 text-light">
-          Made By Mazen Abdelgowad &copy; {new Date().getFullYear()}
+          Made By Mazen Abdelgawad &copy; {new Date().getFullYear()}
         </p>
         <p className="mb-0 text-light">
           <a

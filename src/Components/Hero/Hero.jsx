@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="overlapping-text">
           HELLO I<span className="colored-text">&apos;</span>M
           <br />
-          <span className="main-colored-text">Mazen Abdelgowad</span>
+          <span className="main-colored-text">Mazen Abdelgawad</span>
         </h1>
         <p className="description">
           I believe that collaboration and creativity are the cornerstones of

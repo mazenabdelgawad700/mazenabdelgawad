@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -62,7 +61,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-4">
             <h3 className="colored-text">Email</h3>
-            <p className="colored-description">mazenahmedsaleh206@gmail.com</p>
+            <p className="colored-description">mazenabdelgawad700@gmail.com</p>
           </div>
 
           <div className="col-lg-4">
@@ -91,7 +90,6 @@ const Contact = () => {
               type="text"
               id="user-name"
               name="name"
-              // required
               onChange={(e) => setUserName(e.target.value)}
               value={userName}
               autoComplete="off"
@@ -110,7 +108,6 @@ const Contact = () => {
               id="user-email"
               name="email"
               value={userEmail}
-              // required
               onChange={(e) => setUserEmail(e.target.value)}
               autoComplete="off"
             />
@@ -128,7 +125,6 @@ const Contact = () => {
           id="project-details"
           onChange={(e) => setUserMessage(e.target.value)}
           value={userMessage}
-          // required
         ></textarea>
 
         <button className="send-message-button" type="submit">

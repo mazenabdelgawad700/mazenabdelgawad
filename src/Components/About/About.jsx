@@ -8,8 +8,7 @@ const About = () => {
           <h2 className="main-header-title">About</h2>
           <p className="colored-description">
             Hello there! I&apos;m
-            <span className="colored-text"> Mazen Abdelgowad</span>, a native
-            Cairene
+            <span className="colored-text"> Mazen Abdelgawad</span>, Software Engineer 
             <br />
             driven by innovation and a passion for creative expression. My
             Journey into the digital realm began in the heart of the bustling

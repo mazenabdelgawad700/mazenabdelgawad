@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg position-fixed w-100">
       <div className="container">
         <a className="navbar-brand colored-text" href="#hero">
-          Mazen Abdelgowad
+          Mazen Abdelgawad
         </a>
         <button
           className="navbar-toggler"
