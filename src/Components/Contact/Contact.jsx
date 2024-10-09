@@ -66,7 +66,7 @@ const Contact = () => {
 
           <div className="col-lg-4">
             <h3 className="colored-text">Address</h3>
-            <p className="colored-description">Cairo 15 May City</p>
+            <p className="colored-description">Egypt | Cairo</p>
           </div>
 
           <div className="col-lg-4">
