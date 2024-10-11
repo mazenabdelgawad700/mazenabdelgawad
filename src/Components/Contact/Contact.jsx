@@ -1,39 +1,43 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Contact.css";
 const Contact = () => {
   const [userName, setUserName] = useState("");
-
   const [userEmail, setUserEmail] = useState("");
-
   const [userMessage, setUserMessage] = useState("");
+
+  const userRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
 
   const isEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  const notify = (message) => toast(message);
+  const notifyError = (message) => toast.error(message);
+  const notifySuccess = (message) => toast.success(message);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (userName.trim() === "") {
-      notify("Please enter a username");
+      notifyError("Please enter a username");
+      userRef.current.focus();
       return;
     }
-
     if (userEmail.trim() === "" && !isEmail(userEmail)) {
-      notify("Please enter a valid email address");
+      notifyError("Please enter a valid email address");
+      emailRef.current.focus();
       return;
     }
-
     if (userMessage.trim() === "") {
-      notify("Please, provide us with more detalis");
+      notifyError("Please, enter a valid message");
+      messageRef.current.focus();
       return;
     }
-    console.log({ userName, userEmail, userMessage });
+    notifySuccess("Thanks for your time, we will keep in touch");
     setUserName("");
     setUserEmail("");
     setUserMessage("");
@@ -41,7 +45,19 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        icon
+      />
 
       <div className="contact-main-text">
         <h2 className="main-header-title">Contact</h2>
@@ -93,6 +109,7 @@ const Contact = () => {
               onChange={(e) => setUserName(e.target.value)}
               value={userName}
               autoComplete="off"
+              ref={userRef}
             />
           </div>
           <div className="user-email-container">
@@ -110,6 +127,7 @@ const Contact = () => {
               value={userEmail}
               onChange={(e) => setUserEmail(e.target.value)}
               autoComplete="off"
+              ref={emailRef}
             />
           </div>
         </div>
@@ -125,6 +143,7 @@ const Contact = () => {
           id="project-details"
           onChange={(e) => setUserMessage(e.target.value)}
           value={userMessage}
+          ref={messageRef}
         ></textarea>
 
         <button className="send-message-button" type="submit">
