@@ -1,19 +1,26 @@
 import "./Portfolio.css";
-import project1 from "../../assets/project1.jpg";
-import project2 from "../../assets/project2.jpg";
+import project1 from "../../assets/project2.jpg";
+import project2 from "../../assets/image.png";
+import project3 from "../../assets/image2.png";
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
       prjectName: "Blog App",
-      image: project2,
+      image: project1,
       link: "https://github.com/mazenabdelgowad/Blog-App",
     },
     {
       id: 2,
-      prjectName: "AI Agency",
-      image: project1,
-      link: "https://github.com/mazenabdelgowad/AI-portfolio/tree/master",
+      prjectName: "Cook it Eat it",
+      image: project2,
+      link: "https://github.com/mazenabdelgawad700/CookItEatIt",
+    },
+    {
+      id: 2,
+      prjectName: "Ecommerce",
+      image: project3,
+      link: "https://github.com/mazenabdelgawad700/EcommerceSystem",
     },
   ];
 
@@ -29,70 +36,34 @@ const Portfolio = () => {
         </p>
       </div>
 
-      <div id="carouselExampleCaptions" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-
-        <div className="carousel-inner">
+      <div className="container">
+        <div className="row justify-content-center">
           {projects.map((project) => (
-            <div className="carousel-item active" key={project?.id}>
-              <img
-                src={project?.image}
-                className="d-block"
-                alt={project?.prjectName}
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>{project?.prjectName}</h5>
-                <a
-                  href={project?.link}
-                  target="_blank"
-                  className="portfolio-link"
-                >
-                  See Project
-                </a>
+            <div key={project.id} className="col-md-4 mb-4 d-flex">
+              <div className="card shadow-sm flex-fill">
+                <img
+                  src={project.image}
+                  className="card-img-top"
+                  alt={project.projectName}
+                  style={{ height: "200px", objectFit: "cover" }}
+                />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title text-center">
+                    {project.projectName}
+                  </h5>
+                  <a
+                    href={project.link}
+                    className="btn btn-primary mt-auto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
-
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
   );
