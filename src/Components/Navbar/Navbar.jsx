@@ -89,12 +89,12 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className={`${
-                  activeSection === "portfolio" ? "active" : ""
+                  activeSection === "skills" ? "active" : ""
                 } nav-link`}
                 onClick={handleNavbarCollapse}
-                href="#portfolio"
+                href="#skills"
               >
-                Portfolio
+                Skills
               </a>
             </li>
             <li className="nav-item">
@@ -106,6 +106,17 @@ const Navbar = () => {
                 href="#experience"
               >
                 Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`${
+                  activeSection === "portfolio" ? "active" : ""
+                } nav-link`}
+                onClick={handleNavbarCollapse}
+                href="#portfolio"
+              >
+                Portfolio
               </a>
             </li>
             <li className="nav-item">

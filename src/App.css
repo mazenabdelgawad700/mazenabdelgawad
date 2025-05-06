@@ -50,6 +50,7 @@ section {
 .main-header-title {
   color: var(--font-main-color);
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .colored-text {
