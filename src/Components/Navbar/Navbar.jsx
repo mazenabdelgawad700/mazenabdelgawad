@@ -100,6 +100,17 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className={`${
+                  activeSection === "experience" ? "active" : ""
+                } nav-link`}
+                onClick={handleNavbarCollapse}
+                href="#experience"
+              >
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`${
                   activeSection === "contact" ? "active" : ""
                 } nav-link`}
                 onClick={handleNavbarCollapse}
