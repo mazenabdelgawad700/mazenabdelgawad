@@ -17,7 +17,11 @@ const Hero = () => {
           progress, and I am dedicated to bringing a fresh perspective to every
           project I undertake.
         </p>
-        <a className="download" href={pdf} download="Mazen_Abdelgowad_CV.pdf">
+        <a
+          className="download"
+          href={pdf}
+          download="Mazen_Abdelgowad_Software_Engineer.pdf"
+        >
           CV
           <FaDownload />
         </a>
