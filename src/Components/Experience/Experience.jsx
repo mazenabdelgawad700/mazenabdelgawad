@@ -42,8 +42,7 @@ const Experience = () => {
       responsibilities: {
         resp1:
           "Architected and implemented robust RESTful APIs following industry best practices to support scalable web applications.",
-        resp2:
-          "Diagnosed and resolved complex server and database issues, improving system reliability and performance by 30%.",
+        resp2: "Diagnosed and resolved complex server and database issues.",
         resp3:
           "Engineered efficient data transformation processes to enhance data visualization and analytics capabilities for stakeholders.",
         resp4:
