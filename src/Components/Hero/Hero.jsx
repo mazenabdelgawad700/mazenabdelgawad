@@ -20,7 +20,7 @@ const Hero = () => {
         <a
           className="download"
           href={pdf}
-          download="Mazen_Abdelgowad_Software_Engineer.pdf"
+          download="Mazen_Abdelgawad_Software_Engineer.pdf"
         >
           CV
           <FaDownload />
