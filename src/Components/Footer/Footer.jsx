@@ -11,7 +11,7 @@ const Footer = () => {
           <a
             target="_blank"
             className="mx-1 text-light"
-            href="www.linkedin.com/in/mazen-abdelgawad"
+            href="https://www.linkedin.com/in/mazen-abdelgawad/"
           >
             <FaLinkedin />
           </a>
