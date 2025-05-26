@@ -62,7 +62,6 @@ const Experience = () => {
               {exp.company} <span className="position">– {exp.position}</span>
             </h2>
             <p className="period colored-description">{exp.period}</p>
-            <p className="period colored-description">exp id: {exp.id}</p>
           </div>
 
           {Object.keys(exp.responsibilities).length > 0 && (
