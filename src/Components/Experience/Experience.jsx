@@ -38,7 +38,7 @@ const Experience = () => {
       id: "exp3",
       company: "ECIT",
       position: "Software Engineer",
-      period: "August 2024 – Present",
+      period: "August 2024 – June 2025",
       responsibilities: {
         resp1:
           "Architected and implemented robust RESTful APIs following industry best practices to support scalable web applications.",
@@ -46,7 +46,7 @@ const Experience = () => {
         resp3:
           "Engineered efficient data transformation processes to enhance data visualization and analytics capabilities for stakeholders.",
         resp4:
-          "Managed critical backend infrastructure including API maintenance, database optimization, and deployment pipelines in an Agile environment.",
+          "Managed critical backend infrastructure including API maintenance, database optimization.",
       },
     },
   ];
