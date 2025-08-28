@@ -17,7 +17,7 @@ const Portfolio = () => {
       link: "https://github.com/mazenabdelgawad700/CookItEatIt",
     },
     {
-      id: 2,
+      id: 3,
       prjectName: "Ecommerce",
       image: project3,
       link: "https://github.com/mazenabdelgawad700/EcommerceSystem",
