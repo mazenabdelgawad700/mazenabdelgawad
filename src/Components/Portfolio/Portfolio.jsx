@@ -6,19 +6,19 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      prjectName: "Blog Application",
+      projectName: "Blog Application",
       image: project1,
       link: "https://github.com/mazenabdelgawad700/Blog",
     },
     {
       id: 2,
-      prjectName: "Cook it Eat it",
+      projectName: "Cook it Eat it",
       image: project2,
       link: "https://github.com/mazenabdelgawad700/CookItEatIt",
     },
     {
       id: 3,
-      prjectName: "Ecommerce",
+      projectName: "Ecommerce",
       image: project3,
       link: "https://github.com/mazenabdelgawad700/EcommerceSystem",
     },
