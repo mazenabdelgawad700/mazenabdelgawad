@@ -4,22 +4,6 @@ const Experience = () => {
   const experiences = [
     {
       id: "exp1",
-      company: "GDSC EELU-Bani Suief",
-      position: "HR Coordinator",
-      period: "February 2024 – September 2024",
-      responsibilities: {
-        resp1:
-          "Organized and managed groups of participants for various events and programs.",
-        resp2:
-          "Played a key role in coordinating the Mena TechSkills Initiative by Google, providing AI and Cloud courses to students.",
-        resp3:
-          "Created and managed WhatsApp groups to handle student queries, ensuring smooth communication and a positive learning experience.",
-        resp4:
-          "Collaborated with team members to ensure efficient event execution and course facilitation, supporting hundreds of students.",
-      },
-    },
-    {
-      id: "exp2",
       company: "Digital Egypt Pioneers Initiative (DEPI)",
       position: "Web Development Intern",
       period: "April 2024 – October 2024",
@@ -35,10 +19,10 @@ const Experience = () => {
       },
     },
     {
-      id: "exp3",
+      id: "exp2",
       company: "ECIT",
-      position: "Software Engineer",
-      period: "August 2024 – June 2025",
+      position: "Backend Software Engineer",
+      period: "August 2024 – June 2025 | Cairo, Egypt",
       responsibilities: {
         resp1:
           "Architected and implemented robust RESTful APIs following industry best practices to support scalable web applications.",
@@ -47,6 +31,20 @@ const Experience = () => {
           "Engineered efficient data transformation processes to enhance data visualization and analytics capabilities for stakeholders.",
         resp4:
           "Managed critical backend infrastructure including API maintenance, database optimization.",
+      },
+    },
+    {
+      id: "exp3",
+      company: "NDS",
+      position: "Backend Software Engineer (Project Based)",
+      period: "July 2025 – October 2025 | Cairo, Egypt",
+      responsibilities: {
+        resp1:
+          "Developed and maintained backend services using ASP.NET Core Web API, supporting core business workflows with high availability.",
+        resp3:
+          "Collaborated with cross-functional teams to design and document a modular backend architecture.",
+        resp4:
+          "Improved backend reliability by implementing structured validation, centralized error handling, and participating in code reviews, reducing recurring production issues.",
       },
     },
   ];
