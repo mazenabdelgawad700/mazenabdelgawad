@@ -63,11 +63,15 @@ const Experience = () => {
   };
 
   return (
-    <section className="experience" id="experience" aria-label="Work Experience">
+    <section
+      className="experience"
+      id="experience"
+      aria-label="Work Experience"
+    >
       <div className="experience-container">
         {/* Section Title */}
         <div className="experience-header-section">
-          <span className="experience-eyebrow">Work Experience</span>
+          <span className="header-title-eyebrow">Work Experience</span>
         </div>
 
         <div className="experience-grid">
@@ -113,20 +117,24 @@ const Experience = () => {
                 <span className="experience-at">@ {activeExp.company}</span>
               </h3>
               <p className="experience-dates-loc">
-                {activeExp.startDate} - {activeExp.endDate} | {activeExp.location}
+                {activeExp.startDate} - {activeExp.endDate} |{" "}
+                {activeExp.location}
               </p>
             </div>
 
             {/* Subordinate Internship progression */}
             {activeExp.previousRole && (
               <div className="experience-internship-sub">
-                <span className="internship-arrow" aria-hidden="true">↳</span>
+                <span className="internship-arrow" aria-hidden="true">
+                  ↳
+                </span>
                 <div className="internship-details">
                   <span className="internship-role">
                     Promoted from {activeExp.previousRole.role}
                   </span>
                   <span className="internship-dates">
-                    {activeExp.previousRole.startDate} - {activeExp.previousRole.endDate}
+                    {activeExp.previousRole.startDate} -{" "}
+                    {activeExp.previousRole.endDate}
                   </span>
                 </div>
               </div>

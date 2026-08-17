@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero" id="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <span className="hero-eyebrow">Software Engineer</span>
+          <span className="header-title-eyebrow mb-1">Software Engineer</span>
           <h1 className="hero-name">
             Mazen
             <br />
@@ -37,30 +37,30 @@ const Hero = () => {
               View My Work
             </a>
             <div className="hero-cta-secondary">
-            <a
-              href="https://github.com/mazenabdelgawad700"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub profile"
-              className="hero-social-link"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/mazen-abdelgawad"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn profile"
-              className="hero-social-link"
-            >
-              <FaLinkedinIn />
-            </a>
               <a
                 href="mailto:mazenabdelgawad700@gmail.com"
                 aria-label="Contact me"
                 className="hero-social-link"
               >
                 <FaEnvelope />
+              </a>
+              <a
+                href="https://github.com/mazenabdelgawad700"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+                className="hero-social-link"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://linkedin.com/in/mazen-abdelgawad"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+                className="hero-social-link"
+              >
+                <FaLinkedinIn />
               </a>
             </div>
           </div>

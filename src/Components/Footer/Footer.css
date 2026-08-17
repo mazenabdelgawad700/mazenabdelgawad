@@ -1,0 +1,9 @@
+.footer {
+  padding: 20px 0;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.footer-text {
+  color: var(--foreground-muted);
+  font-size: 16px;
+}
