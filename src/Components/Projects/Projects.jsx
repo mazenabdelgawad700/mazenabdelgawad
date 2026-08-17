@@ -1,44 +1,32 @@
-import "./Portfolio.css";
-import project1 from "../../assets/project2.jpg";
-import project2 from "../../assets/image.png";
-import project3 from "../../assets/image2.png";
-const Portfolio = () => {
-  const projects = [
+import "./Projects.css";
+import project1 from "../../assets/image.png";
+
+const Projects = () => {
+  const myProjects = [
     {
       id: 1,
-      projectName: "Blog Application",
-      image: project1,
-      link: "https://github.com/mazenabdelgawad700/Blog",
-    },
-    {
-      id: 2,
       projectName: "Cook it Eat it",
-      image: project2,
+      image: project1,
       link: "https://github.com/mazenabdelgawad700/CookItEatIt",
-    },
-    {
-      id: 3,
-      projectName: "Ecommerce",
-      image: project3,
-      link: "https://github.com/mazenabdelgawad700/EcommerceSystem",
     },
   ];
 
   return (
-    <section className="portfolio" id="portfolio">
-      <div className="portfolio-text mb-5">
-        <h2 className="main-header-title">Portfolio</h2>
-        <p className="colored-description">
-          I&apos;ve worked on various projects over the years, showcasing my
-          <br />
-          skills and experiences in various fields. Some of my most recent
-          projects include:
-        </p>
+    <section className="projects" id="projects">
+      <div className="header-title-eyebrow projects-header">
+        <span className="projects-eyebrow">Projects</span>
       </div>
+
+      <p className="projects-description">
+        I&apos;ve worked on various projects over the years, showcasing my
+        <br />
+        skills and experiences in various fields. Some of my most recent
+        projects include:
+      </p>
 
       <div className="container">
         <div className="row justify-content-center">
-          {projects.map((project) => (
+          {myProjects.map((project) => (
             <div key={project.id} className="col-md-4 mb-4 d-flex">
               <div className="card shadow-sm flex-fill">
                 <img
@@ -69,4 +57,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

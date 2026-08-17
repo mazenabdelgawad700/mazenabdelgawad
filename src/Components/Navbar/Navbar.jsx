@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { FaBars, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useState } from "react";
+import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -7,36 +7,8 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   const handleNavbarCollapse = () => {
-    setExpanded(false); // Collapse the navbar
+    setExpanded(false);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      const sections = document.querySelectorAll("section");
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 50; // Adjusted for navbar height if needed
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute("id");
-
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          setActiveSection(sectionId);
-        }
-      });
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg position-fixed w-100">
@@ -65,9 +37,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
-                className={`${
-                  activeSection === "hero" ? "active" : ""
-                } nav-link`}
+                className="nav-link"
                 onClick={handleNavbarCollapse}
                 aria-current="page"
                 href="#hero"
@@ -77,9 +47,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a
-                className={`${
-                  activeSection === "about" ? "active" : ""
-                } nav-link`}
+                className="nav-link"
                 onClick={handleNavbarCollapse}
                 href="#about"
               >
@@ -88,9 +56,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a
-                className={`${
-                  activeSection === "experience" ? "active" : ""
-                } nav-link`}
+                className="nav-link"
                 onClick={handleNavbarCollapse}
                 href="#experience"
               >
@@ -99,28 +65,22 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a
-                className={`${
-                  activeSection === "portfolio" ? "active" : ""
-                } nav-link`}
+                className="nav-link"
                 onClick={handleNavbarCollapse}
-                href="#portfolio"
+                href="#projects"
               >
                 Projects
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className={`${
-                  activeSection === "contact" ? "active" : ""
-                } nav-link`}
-                onClick={handleNavbarCollapse}
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
           </ul>
           <div className="navbar-socials">
+            <a
+              href="mailto:mazenabdelgawad700@gmail.com"
+              aria-label="Contact me"
+              className="navbar-social-link"
+            >
+              <FaEnvelope />
+            </a>
             <a
               href="https://github.com/mazenabdelgawad700"
               target="_blank"

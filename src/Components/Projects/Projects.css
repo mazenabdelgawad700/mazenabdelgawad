@@ -1,0 +1,13 @@
+section.projects {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.projects-header {
+  margin-bottom: 2.5rem;
+}
+
+.projects-description {
+  color: var(--foreground-muted);
+  margin-bottom: 2.5rem;
+}
