@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
-import DarkModeButton from "../DarkModeButton/DarkModeButton";
+import { FaBars, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "./Navbar.css";
+
 const Navbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg position-fixed w-100">
       <div className="container">
-        <a className="navbar-brand colored-text" href="#hero">
+        <a className="navbar-brand" href="#hero">
           Mazen Abdelgawad
         </a>
         <button
@@ -89,17 +89,6 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className={`${
-                  activeSection === "skills" ? "active" : ""
-                } nav-link`}
-                onClick={handleNavbarCollapse}
-                href="#skills"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={`${
                   activeSection === "experience" ? "active" : ""
                 } nav-link`}
                 onClick={handleNavbarCollapse}
@@ -116,7 +105,7 @@ const Navbar = () => {
                 onClick={handleNavbarCollapse}
                 href="#portfolio"
               >
-                Portfolio
+                Projects
               </a>
             </li>
             <li className="nav-item">
@@ -131,7 +120,26 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <DarkModeButton setExpanded={setExpanded} />
+          <div className="navbar-socials">
+            <a
+              href="https://github.com/mazenabdelgawad700"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="navbar-social-link"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/mazen-abdelgawad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="navbar-social-link"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
