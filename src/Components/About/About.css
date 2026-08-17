@@ -1,6 +1,230 @@
-.about-image img {
-  max-width: 100%;
-  filter: var(--image-filter);
-  max-height: 500px;
-  border-radius: 10px;
+/* ==========================================================================
+   About Section (Conversational & Authentic Style)
+   ========================================================================== */
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  border-top: 1px solid var(--border);
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ---------- Header ---------- */
+
+.about-header {
+  margin-bottom: 2.5rem;
+}
+
+/* Eyebrow matching Hero styling */
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.about-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+/* ---------- Layout Grid ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ---------- Narrative & Content ---------- */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 600px;
+}
+
+.about-narrative p {
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: var(--foreground-muted);
+  margin: 0;
+}
+
+/* Subtle highlights for credibility */
+.about-highlight {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* ---------- Quiet Closing Line ---------- */
+
+.about-closing {
+  margin-top: 0.5rem;
+}
+
+.about-closing-text {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ---------- Sidebar Metadata ---------- */
+
+.about-sidebar {
+  position: sticky;
+  top: 120px;
+}
+
+.about-sidebar-card {
+  background: var(--background-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.metadata-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.metadata-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(96, 165, 250, 0.06);
+  border: 1px solid rgba(96, 165, 250, 0.1);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.metadata-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metadata-label {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+}
+
+.metadata-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--foreground);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* Laptop / small desktop */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 0 1.5rem;
+  }
+
+  .about-grid {
+    gap: 3rem;
+  }
+
+  .about-sidebar-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .about-eyebrow::before {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-sidebar {
+    position: static;
+  }
+
+  .about-sidebar-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .about-narrative p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .about-closing-text {
+    font-size: 0.8rem;
+  }
+
+  .about-sidebar-card {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 }
