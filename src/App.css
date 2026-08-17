@@ -1,35 +1,52 @@
 :root {
-  --main-color: #f7f7f7;
-  --secondary-color: #ffffff;
-  --font-main-color: #1c1c1c;
-  --font-secondary-color: #ff4c33;
-  --nav-bar-background-color: rgba(255, 255, 255, 0.8);
+  /* Core palette — dark-only presentation */
+  --background: #0A0A0A;
+  --background-alt: #111111;
+  --foreground: #F5F5F5;
+  --foreground-muted: #9CA3AF;
+  --accent: #60A5FA;
+  --accent-hover: #93C5FD;
+  --border: #1F1F1F;
+  --nav-bg: rgba(10, 10, 10, 0.85);
+
+  /* Legacy aliases — backward compatibility for existing sections */
+  --main-color: var(--background);
+  --secondary-color: var(--background-alt);
+  --font-main-color: var(--foreground);
+  --font-secondary-color: var(--accent);
+  --nav-bar-background-color: var(--nav-bg);
   --image-filter: none;
 }
 
+/* Dark theme block preserved for architecture — mirrors :root */
 [data-theme="dark"] {
-  --main-color: #121212;
-  --secondary-color: #090909;
-  --font-main-color: #efefef;
-  --font-secondary-color: #91e019;
-  --nav-bar-background-color: rgba(0, 0, 0, 0.8);
-  --image-filter: grayscale(100%);
+  --background: #0A0A0A;
+  --background-alt: #111111;
+  --foreground: #F5F5F5;
+  --foreground-muted: #9CA3AF;
+  --accent: #60A5FA;
+  --accent-hover: #93C5FD;
+  --border: #1F1F1F;
+  --nav-bg: rgba(10, 10, 10, 0.85);
+
+  --main-color: var(--background);
+  --secondary-color: var(--background-alt);
+  --font-main-color: var(--foreground);
+  --font-secondary-color: var(--accent);
+  --nav-bar-background-color: var(--nav-bg);
+  --image-filter: none;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    var(--main-color) 70%,
-    var(--secondary-color) 30%
-  );
+  background: var(--background);
+  color: var(--foreground);
 }
 
 ul {

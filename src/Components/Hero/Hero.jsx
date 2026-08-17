@@ -1,34 +1,80 @@
-import mainImage from "../../assets/p1.jpg";
-import pdf from "../../assets/CV.pdf";
-import { FaDownload } from "react-icons/fa";
+import mainImage from "../../assets/heroImage.png";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import "./Hero.css";
+
 const Hero = () => {
   return (
     <section className="hero" id="hero">
-      <div className="text-container">
-        <p className="subtitle mb-0">Software Engineer</p>
-        <h1 className="overlapping-text">
-          HELLO I<span className="colored-text">&apos;</span>M
-          <br />
-          <span className="main-colored-text">Mazen Abdelgawad</span>
-        </h1>
-        <p className="description">
-          I believe that collaboration and creativity are the cornerstones of
-          progress, and I am dedicated to bringing a fresh perspective to every
-          project I undertake.
-        </p>
-        <a
-          className="download"
-          href={pdf}
-          download="Mazen_Abdelgawad_Software_Engineer.pdf"
-        >
-          CV
-          <FaDownload />
-        </a>
-      </div>
+      <div className="hero-content">
+        <div className="hero-text">
+          <span className="hero-eyebrow">Software Engineer</span>
+          <h1 className="hero-name">
+            Mazen
+            <br />
+            Abdelgawad
+          </h1>
 
-      <div className="hero-image-container">
-        <img className="hero-image" src={mainImage} alt="mazen" />
+          <blockquote className="hero-statement">
+            I believe power is earned, not given.
+          </blockquote>
+
+          <div className="hero-intro">
+            <p>
+              I&apos;m Mazen Abdelgawad, a software engineer driven by the
+              pursuit of mastery - in engineering, in discipline, and in the
+              things I choose to build.
+            </p>
+            <p>
+              I don&apos;t want to simply write software. I want to become
+              someone capable of building things that matter, carrying
+              responsibility, and earning the power that comes with being
+              exceptionally good at what I do.
+            </p>
+          </div>
+
+          <div className="hero-cta">
+            <a href="#portfolio" className="hero-cta-primary">
+              View My Work
+            </a>
+            <div className="hero-cta-secondary">
+            <a
+              href="https://github.com/mazenabdelgawad700"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="hero-social-link"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/mazen-abdelgawad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="hero-social-link"
+            >
+              <FaLinkedinIn />
+            </a>
+              <a
+                href="mailto:mazenabdelgawad700@gmail.com"
+                aria-label="Contact me"
+                className="hero-social-link"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-portrait">
+          <div className="hero-portrait-frame">
+            <img
+              src={mainImage}
+              alt="Mazen Abdelgawad - Software Engineer"
+              className="hero-portrait-img"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
