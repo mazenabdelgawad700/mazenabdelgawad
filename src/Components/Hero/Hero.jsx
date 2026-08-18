@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-cta">
-            <a href="#portfolio" className="hero-cta-primary">
+            <a href="#projects" className="hero-cta-primary">
               View My Work
             </a>
             <div className="hero-cta-secondary">
